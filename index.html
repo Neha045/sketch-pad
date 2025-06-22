@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sketch Pad</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Sketch Pad</h1>
+    <div id="buttons">
+      <button id="grid-size">Grid Size</button>
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close-button" onclick="closePopup()">&times;</span>
+          <input type="number" id="gridSize" max="100" min="0" />
+          <button onclick="displayInputValue()">Go!</button>
+        </div>
+      </div>
+      <button id="reset" onclick="reset()">Reset</button>
+    </div>
+    <div id="container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
